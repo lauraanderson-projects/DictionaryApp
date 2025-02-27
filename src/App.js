@@ -12,7 +12,16 @@ function App() {
           <Dictionary />
         </main>
       </div>
-      <footer className="footer">Coded by Laura Anderson</footer>
+      <footer className="footer">
+        This project was coded by{" "}
+        <a href="https://github.com/lauraanderson-projects">Laura Anderson</a>{" "}
+        and is on{" "}
+        <a href="https://github.com/lauraanderson-projects/DictionaryApp">
+          GitHub
+        </a>{" "}
+        and hosted on{" "}
+        <a href="https://dictionary-app-reactjs-la.netlify.app/">Netlify</a>.
+      </footer>
     </div>
   );
 }

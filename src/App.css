@@ -1,0 +1,19 @@
+h1 {
+  text-align: center;
+}
+
+h2,
+h3 {
+  text-align: center;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 600px;
+  background-color: beige;
+  padding: 20px;
+}
+
+.footer {
+  text-align: center;
+}
