@@ -56,6 +56,7 @@ export default function Dictionary(props) {
               type="search"
               autoFocus="true"
               onChange={handleKeywordChange}
+              required
               placeholder="Search word, example Hello"
             />
             <div className="hint">suggested words: sunset, home, happy...</div>
