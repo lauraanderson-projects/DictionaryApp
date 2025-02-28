@@ -3,14 +3,6 @@ import Synonyms from "./Synonyms";
 import "./Meaning.css";
 
 export default function Meaning(props) {
-  function meaningQuotes() {
-    if (props.meaning.example) {
-      return `"${props.meaning.example}"`;
-    } else {
-      return null;
-    }
-  }
-
   return (
     <div className="Meaning">
       <h4>{props.meaning.partOfSpeech}</h4>
