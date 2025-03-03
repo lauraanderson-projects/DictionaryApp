@@ -1,3 +1,10 @@
 .Results section {
   padding: 20px 40px 20px 40px;
 }
+
+.Results .error-message {
+  text-align: center;
+  color: #808080;
+  font-size: 20px;
+  line-height: 1.5;
+}

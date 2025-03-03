@@ -3,23 +3,33 @@ import Meaning from "./Meaning";
 import "./Results.css";
 
 export default function Results(props) {
-  if (props.results) {
+  // Check if results exist and have meanings
+  if (
+    !props.results ||
+    !props.results.meanings ||
+    props.results.meanings.length === 0
+  ) {
     return (
       <div className="Results">
-        <section>
-          <h2>{props.results.word}</h2>
-          <h3>{props.results.phonetic}</h3>
+        <section className="error-message">
+          No definitions found. Try another word.
         </section>
-        {props.results.meanings.map(function (meaning, index) {
-          return (
-            <section key={index}>
-              <Meaning meaning={meaning} />
-            </section>
-          );
-        })}
       </div>
     );
-  } else {
-    return null;
   }
+
+  return (
+    <div className="Results">
+      <section>
+        <h2>{props.results.word}</h2>
+        <h3>{props.results.phonetic}</h3>
+      </section>
+
+      {props.results.meanings.map((meaning, index) => (
+        <section key={index}>
+          <Meaning meaning={meaning} />
+        </section>
+      ))}
+    </div>
+  );
 }
