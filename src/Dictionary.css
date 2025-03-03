@@ -29,6 +29,12 @@
   margin: 20px 0;
 }
 
+.Dictionary .error-message {
+  padding: 20px;
+  text-align: center;
+  color: #c52f2f;
+}
+
 .Dictionary header {
   padding-top: 30px;
 }
